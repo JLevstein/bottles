@@ -37,7 +37,7 @@ p18
 (dp20
 S'text'
 p21
-V<html><h3>Today is a good day to send a bottle out to sea.</h3></html>\u000a\u000aWhat will we send out?\u000a\u000aA Story of [[Power|PowerMessage]]?\u000a\u000aA Message of [[Wisdom|WisdomMessage]]?\u000a\u000aor A Word of [[Courage|CourageMessage]]?\u000a\u000a<<silently>>\u000a<<set $firstBottle = "">>\u000a<<set $secondBottle = "">>\u000a<<set $thirdBottle = "">>\u000a<<endsilently>>
+V<html><h3>Bottles</h3></html>\u000a\u000a[[Start (please turn on your sound)|Day1]]\u000a\u000aBy: Jonathan Levstein
 p22
 sS'title'
 p23
@@ -51,9 +51,9 @@ p26
 ((I2015
 I4
 I29
-I17
-I5
-I9
+I19
+I58
+I44
 I2
 I119
 I0
@@ -351,7 +351,7 @@ Tiddler
 p119
 (dp120
 g21
-VToday, we caught some bugs in the park by the beach.\u000a\u000aThey were buzzing and flying and making strange patterns in the air.\u000a<<if $firstBottle eq "power">>\u000a[[We let them go after we caught them.|Day3]]\u000a<<elseif $firstBottle eq "courage">>\u000a[[We finally caught a bee!|Day3]]\u000a<<elseif $firstBottle eq "wisdom">>\u000a[[We read them a story to help them become smarter.|Day3]]\u000a<<endif>>
+VToday, we caught some bugs in the park by the beach.\u000a\u000aThey were buzzing and flying and making strange patterns in the air.\u000a<<if $firstBottle eq "power">>\u000a[[We let them go after we caught them.|Day3]]\u000a<<elseif $firstBottle eq "courage">>\u000a[[We finally caught a bee!|Day3]]\u000a<<elseif $firstBottle eq "wisdom">>\u000a[[We read them a story to help them become smarter.|Day3]]\u000a<<endif>>\u000a\u000a<<fadeoutsound $ocean>>\u000a<<loopsound $cicadas>>
 p121
 sg23
 VDay2
@@ -361,9 +361,9 @@ g26
 ((I2015
 I4
 I29
-I17
-I5
-I52
+I19
+I49
+I22
 I2
 I119
 I0
@@ -403,7 +403,7 @@ Tiddler
 p135
 (dp136
 g21
-VToday is another good day for us to send out a message.\u000a\u000aWhat will we send out?\u000a\u000a[[A Letter of Love|LoveMessage]] or [[A Letter of Loss|LossMessage]]
+VToday is another good day for us to send out a message.\u000a\u000aWhat will we send out?\u000a\u000a[[A Letter of Love|LoveMessage]] or [[A Letter of Loss|LossMessage]]\u000a\u000a<<fadeoutsound $cicadas>>\u000a<<loopsound $ocean>>
 p137
 sg23
 VDay3
@@ -413,9 +413,9 @@ g26
 ((I2015
 I4
 I29
-I17
-I5
-I45
+I19
+I52
+I54
 I2
 I119
 I0
@@ -559,7 +559,7 @@ Tiddler
 p183
 (dp184
 g21
-VToday we decided to enjoy some <<if $secondBottle eq "love">>apple<<elseif $secondBottle eq "loss">>orange<<endif>> juice.\u000a\u000aIt went well with the cicadas trying to find a friend.\u000a\u000a[[Tomorrow|Day5]] will be a good day for a bottle.
+VToday we decided to enjoy some <<if $secondBottle eq "love">>apple<<elseif $secondBottle eq "loss">>orange<<endif>> juice.\u000a\u000aIt went well with the cicadas trying to find a friend.\u000a\u000a[[Tomorrow|Day5]] will be a good day for a bottle.\u000a\u000a<<fadeoutsound $ocean>>\u000a<<loopsound $cicadas>>
 p185
 sg23
 VDay4
@@ -569,9 +569,9 @@ g26
 ((I2015
 I4
 I29
-I17
-I6
-I12
+I19
+I50
+I0
 I2
 I119
 I0
@@ -611,7 +611,7 @@ Tiddler
 p199
 (dp200
 g21
-VWe were right. Today is another good day for bottles.\u000a\u000aThe one time we committed a [[crime|CrimeMessage]].\u000a\u000aWhen we decided to [[apologise|RedemptionMessage]].\u000a\u000aor when we got [[caught|PunishmentMessage]].
+VWe were right. Today is another good day for bottles.\u000a\u000aThe one time we committed a [[crime|CrimeMessage]].\u000a\u000aWhen we decided to [[apologise|RedemptionMessage]].\u000a\u000aor when we got [[caught|PunishmentMessage]].\u000a\u000a<<fadeoutsound $cicadas>>\u000a<<loopsound $ocean>>
 p201
 sg23
 VDay5
@@ -621,9 +621,9 @@ g26
 ((I2015
 I4
 I29
-I17
+I19
+I50
 I6
-I17
 I2
 I119
 I0
@@ -819,7 +819,7 @@ Tiddler
 p263
 (dp264
 g21
-VIt <<if $thirdBottle eq "punishment">>rained<<elseif $thirdBottle eq "redemption">>was too hot<<else>>was too cold<<endif>> today.\u000a\u000aSo we decided to stay inside and play with our dinosaurs.\u000a\u000aWe played with our blocks.\u000a\u000aWe played with our dolls.\u000a\u000aWe played with our toes.\u000a\u000a[[We played with our dreams|Day7]]
+VIt <<if $thirdBottle eq "punishment">>rained<<elseif $thirdBottle eq "redemption">>was too hot<<else>>was too cold<<endif>> today.\u000a\u000aSo we decided to stay inside and play with our dinosaurs.\u000a\u000aWe played with our blocks.\u000a\u000aWe played with our dolls.\u000a\u000aWe played with our toes.\u000a\u000a[[We played with our dreams|Day7]]\u000a<<fadeoutsound $ocean>>
 p265
 sg23
 VDay6
@@ -829,9 +829,9 @@ g26
 ((I2015
 I4
 I29
-I17
-I6
-I46
+I19
+I50
+I55
 I2
 I119
 I0
@@ -860,7 +860,7 @@ tp275
 Rp276
 sbsa(dp277
 g14
-I00
+I01
 sg15
 (lp278
 F475.0
@@ -871,7 +871,7 @@ Tiddler
 p279
 (dp280
 g21
-V<<firstBottle>>\u000a\u000a<<secondBottle>>\u000a\u000a<<thirdBottle>>\u000a\u000a[[I think it's time to wake up|Start]]
+V<<firstBottle>>\u000a\u000a<<secondBottle>>\u000a\u000a<<thirdBottle>>\u000a\u000a[[I think it's time to wake up|Day1]]
 p281
 sg23
 VDay7
@@ -881,9 +881,9 @@ g26
 ((I2015
 I4
 I29
-I17
-I6
-I52
+I19
+I58
+I55
 I2
 I119
 I0
@@ -975,7 +975,7 @@ Tiddler
 p311
 (dp312
 g21
-S'jquery:off\nhash:off\nbookmark:on\nmodernizr:off\nundo:on\nobfuscate:off\nexitprompt:off\nblankcss:on\n'
+S'jquery:on\nhash:off\nbookmark:on\nmodernizr:off\nundo:on\nobfuscate:off\nexitprompt:off\nblankcss:on\n'
 p313
 sg23
 VStorySettings
@@ -984,12 +984,12 @@ sg25
 g26
 ((I2015
 I4
-I28
-I17
-I58
-I33
-I1
-I118
+I29
+I19
+I39
+I42
+I2
+I119
 I0
 tp315
 (dp316
@@ -1025,7 +1025,7 @@ Tiddler
 p326
 (dp327
 g21
-V/* Resetting some stuff */\u000a#sidebar { display: none; }\u000a#passages {\u000a	margin-left: 0;\u000a}\u000a\u000a\u000a/* Main Styles */\u000abody {\u000a	font-family: 'Verdana', Helvetica, sans-serif;\u000a	width: 80%;\u000a	margin: auto;\u000a	text-align: center;\u000a	padding-top: 1em;\u000a	transition: background 3.5s linear;\u000a}\u000a\u000a.passage a {\u000a	color: #8e44ad;\u000a}\u000a\u000a/* Body background styles to co-ordinate with tags and passage section */\u000a\u000abody[data-tags="beach"] {\u000a	background: #f1c40f;\u000a}\u000a\u000abody[data-tags="sleep"] {\u000a	background: #e67e22;\u000a}\u000a\u000abody[data-tags="sleep"] a {\u000a	transition: all 2s linear;\u000a}\u000a\u000abody[data-tags="sleep"] a:hover, body[data-tags="dream"] a:hover {\u000a	text-shadow: 0 13px 10px #8e44ad;\u000a	font-size: 12px;\u000a}\u000a\u000abody[data-tags="bugs"] {\u000a	background: #27ae60;\u000a}\u000a\u000abody[data-tags="home"] {\u000a	background: #e74c3c;\u000a}\u000a\u000abody[data-tags="dream"] {\u000a	background: #ecf0f1;\u000a}\u000a\u000ah3 {\u000a	font-size: 20px;\u000a	margin: 0;\u000a}
+V/* Resetting some stuff */\u000a#sidebar { display: none; }\u000a#passages {\u000a	margin-left: 0;\u000a}\u000a\u000a\u000a/* Main Styles */\u000abody {\u000a	font-family: 'Verdana', Helvetica, sans-serif;\u000a	width: 80%;\u000a	margin: auto;\u000a	text-align: center;\u000a	padding-top: 1em;\u000a	transition: background 3.5s linear;\u000a}\u000a\u000a.passage a {\u000a	color: #8e44ad;\u000a}\u000a\u000a/* Body background styles to co-ordinate with tags and passage section */\u000a\u000abody[data-tags="beach"] {\u000a	background: #f1c40f;\u000a}\u000a\u000abody[data-tags="sleep"] {\u000a	background: #e67e22;\u000a}\u000a\u000abody[data-tags="sleep"] a, body[data-tags="dream"] a {\u000a	transition: all 2s linear;\u000a}\u000a\u000abody[data-tags="sleep"] a:hover, body[data-tags="dream"] a:hover {\u000a	text-shadow: 0 13px 10px #8e44ad;\u000a	font-size: 12px;\u000a}\u000a\u000abody[data-tags="bugs"] {\u000a	background: #27ae60;\u000a}\u000a\u000abody[data-tags="home"] {\u000a	background: #e74c3c;\u000a}\u000a\u000abody[data-tags="dream"] {\u000a	background: #ecf0f1;\u000a}\u000a\u000ah3 {\u000a	font-size: 20px;\u000a	margin: 0;\u000a}
 p328
 sg23
 VStyles
@@ -1036,8 +1036,8 @@ g26
 I4
 I29
 I19
-I19
-I31
+I54
+I14
 I2
 I119
 I0
@@ -1066,7 +1066,7 @@ tp338
 Rp339
 sbsa(dp340
 g14
-I01
+I00
 sg15
 (lp341
 F169.0
@@ -1077,7 +1077,7 @@ Tiddler
 p342
 (dp343
 g21
-V(function () {\u000a  "use strict";\u000a  version.extensions['soundMacros'] = {\u000a    major: 1,\u000a    minor: 1,\u000a    revision: 2\u000a  };\u000a  var p = macros['playsound'] = {\u000a    soundtracks: {},\u000a    handler: function (a, b, c, d) {\u000a      var loop = function (m) {\u000a          if (m.loop == undefined) {\u000a            m.loopfn = function () {\u000a              this.play();\u000a            };\u000a            m.addEventListener('ended', m.loopfn, 0);\u000a          } else m.loop = true;\u000a          m.play();\u000a          };\u000a      var s = eval(d.fullArgs());\u000a      if (s) {\u000a        s = s.toString();\u000a        var m = this.soundtracks[s.slice(0, s.lastIndexOf("."))];\u000a        if (m) {\u000a          if (b == "playsound") {\u000a            m.play();\u000a          } else if (b == "loopsound") {\u000a            loop(m);\u000a          } else if (b == "pausesound") {\u000a            m.pause();\u000a          } else if (b == "unloopsound") {\u000a            if (m.loop != undefined) {\u000a              m.loop = false;\u000a            } else if (m.loopfn) {\u000a              m.removeEventListener('ended', m.loopfn);\u000a              delete m.loopfn;\u000a            }\u000a          } else if (b == "stopsound") {\u000a            m.pause();\u000a            m.currentTime = 0;\u000a          } else if (b == "fadeoutsound" || b == "fadeinsound") {\u000a            if (m.interval) clearInterval(m.interval);\u000a            if (b == "fadeinsound") {\u000a              if (m.currentTime>0) return;\u000a              m.volume = 0;\u000a              loop(m);\u000a            } else {\u000a              if (!m.currentTime) return;\u000a              m.play();\u000a            }\u000a            var v = m.volume;\u000a            m.interval = setInterval(function () {\u000a              v = Math.min(1, Math.max(0, v + 0.005 * (b == "fadeinsound" ? 1 : -1)));\u000a              m.volume = Math.easeInOut(v);\u000a              if (v == 0 || v == 1) clearInterval(m.interval);\u000a              if (v == 0) {\u000a                m.pause();\u000a                m.currentTime = 0;\u000a                m.volume = 1;\u000a              }\u000a            }, 10);\u000a          }\u000a        }\u000a      }\u000a    }\u000a  }\u000a  macros['fadeinsound'] = p;\u000a  macros['fadeoutsound'] = p;\u000a  macros['unloopsound'] = p;\u000a  macros['loopsound'] = p;\u000a  macros['pausesound'] = p;\u000a  macros['stopsound'] = p;\u000a  macros['stopallsound'] = {\u000a    handler: function () {\u000a      var s = macros.playsound.soundtracks;\u000a      for (var j in s) {\u000a		if (s.hasOwnProperty(j)) {\u000a          s[j].pause();\u000a          if (s[j].currentTime) {\u000a		    s[j].currentTime = 0;\u000a		  }\u000a		}\u000a      }\u000a    }\u000a  }\u000a  var div = document.getElementById("storeArea").firstChild;\u000a  var fe = ["ogg", "mp3", "wav", "webm"];\u000a  while (div) {\u000a    var b = String.fromCharCode(92);\u000a    var q = '"';\u000a    var re = "['" + q + "]([^" + q + "']*?)" + b + ".(ogg|mp3|wav|webm)['" + q + "]";\u000a    k(new RegExp(re, "gi"));\u000a    div = div.nextSibling;\u000a  }\u000a\u000a  function k(c, e) {\u000a    do {\u000a      var d = c.exec(div.innerHTML);\u000a      if (d) {\u000a        var a = new Audio();\u000a        if (a.canPlayType) {\u000a          for (var i = -1; i < fe.length; i += 1) {\u000a            if (i >= 0) d[2] = fe[i];\u000a            if (a.canPlayType("audio/" + d[2])) break;\u000a          }\u000a          if (i < fe.length) {\u000a            a.setAttribute("src", d[1] + "." + d[2]);\u000a            a.interval = null;\u000a            macros.playsound.soundtracks[d[1]] = a;\u000a          } else console.log("Browser can't play '" + d[1] + "'");\u000a        }\u000a      }\u000a    } while (d);\u000a  }\u000a}());
+V/**\u000a * Shamelessly stolen from:\u000a * http://www.glorioustrainwrecks.com/node/5061\u000a*/\u000a\u000a(function () {\u000a  "use strict";\u000a  version.extensions['soundMacros'] = {\u000a    major: 1,\u000a    minor: 1,\u000a    revision: 2\u000a  };\u000a  var p = macros['playsound'] = {\u000a    soundtracks: {},\u000a    handler: function (a, b, c, d) {\u000a      var loop = function (m) {\u000a          if (m.loop == undefined) {\u000a            m.loopfn = function () {\u000a              this.play();\u000a            };\u000a            m.addEventListener('ended', m.loopfn, 0);\u000a          } else m.loop = true;\u000a          m.play();\u000a          };\u000a      var s = eval(d.fullArgs());\u000a      if (s) {\u000a        s = s.toString();\u000a        var m = this.soundtracks[s.slice(0, s.lastIndexOf("."))];\u000a        if (m) {\u000a          if (b == "playsound") {\u000a            m.play();\u000a          } else if (b == "loopsound") {\u000a            loop(m);\u000a          } else if (b == "pausesound") {\u000a            m.pause();\u000a          } else if (b == "unloopsound") {\u000a            if (m.loop != undefined) {\u000a              m.loop = false;\u000a            } else if (m.loopfn) {\u000a              m.removeEventListener('ended', m.loopfn);\u000a              delete m.loopfn;\u000a            }\u000a          } else if (b == "stopsound") {\u000a            m.pause();\u000a            m.currentTime = 0;\u000a          } else if (b == "fadeoutsound" || b == "fadeinsound") {\u000a            if (m.interval) clearInterval(m.interval);\u000a            if (b == "fadeinsound") {\u000a              if (m.currentTime>0) return;\u000a              m.volume = 0;\u000a              loop(m);\u000a            } else {\u000a              if (!m.currentTime) return;\u000a              m.play();\u000a            }\u000a            var v = m.volume;\u000a            m.interval = setInterval(function () {\u000a              v = Math.min(1, Math.max(0, v + 0.002 * (b == "fadeinsound" ? 1 : -1)));\u000a              m.volume = Math.easeInOut(v);\u000a              if (v == 0 || v == 1) clearInterval(m.interval);\u000a              if (v == 0) {\u000a                m.pause();\u000a                m.currentTime = 0;\u000a                m.volume = 1;\u000a              }\u000a            }, 10);\u000a          }\u000a        }\u000a      }\u000a    }\u000a  }\u000a  macros['fadeinsound'] = p;\u000a  macros['fadeoutsound'] = p;\u000a  macros['unloopsound'] = p;\u000a  macros['loopsound'] = p;\u000a  macros['pausesound'] = p;\u000a  macros['stopsound'] = p;\u000a  macros['stopallsound'] = {\u000a    handler: function () {\u000a      var s = macros.playsound.soundtracks;\u000a      for (var j in s) {\u000a		if (s.hasOwnProperty(j)) {\u000a          s[j].pause();\u000a          if (s[j].currentTime) {\u000a		    s[j].currentTime = 0;\u000a		  }\u000a		}\u000a      }\u000a    }\u000a  }\u000a  var div = document.getElementById("storeArea").firstChild;\u000a  var fe = ["ogg", "mp3", "wav", "webm"];\u000a  while (div) {\u000a    var b = String.fromCharCode(92);\u000a    var q = '"';\u000a    var re = "['" + q + "]([^" + q + "']*?)" + b + ".(ogg|mp3|wav|webm)['" + q + "]";\u000a    k(new RegExp(re, "gi"));\u000a    div = div.nextSibling;\u000a  }\u000a\u000a  function k(c, e) {\u000a    do {\u000a      var d = c.exec(div.innerHTML);\u000a      if (d) {\u000a        var a = new Audio();\u000a        if (a.canPlayType) {\u000a          for (var i = -1; i < fe.length; i += 1) {\u000a            if (i >= 0) d[2] = fe[i];\u000a            if (a.canPlayType("audio/" + d[2])) break;\u000a          }\u000a          if (i < fe.length) {\u000a            a.setAttribute("src", d[1] + "." + d[2]);\u000a            a.interval = null;\u000a            macros.playsound.soundtracks[d[1]] = a;\u000a          } else console.log("Browser can't play '" + d[1] + "'");\u000a        }\u000a      }\u000a    } while (d);\u000a  }\u000a}());
 p344
 sg23
 VSound Macros
@@ -1088,8 +1088,8 @@ g26
 I4
 I29
 I19
-I28
-I51
+I49
+I10
 I2
 I119
 I0
@@ -1116,10 +1116,62 @@ tp352
 (dp353
 tp354
 Rp355
+sbsa(dp356
+g14
+I00
+sg15
+(lp357
+I165
+aI9
+asg17
+(itiddlywiki
+Tiddler
+p358
+(dp359
+g21
+V<html><h3>Today is a good day to send a bottle out to sea.</h3></html>\u000a\u000aWhat will we send out?\u000a\u000aA Story of [[Power|PowerMessage]]?\u000a\u000aA Message of [[Wisdom|WisdomMessage]]?\u000a\u000aor A Word of [[Courage|CourageMessage]]?\u000a\u000a<<silently>>\u000a<<set $firstBottle = "">>\u000a<<set $secondBottle = "">>\u000a<<set $thirdBottle = "">>\u000a<<set $ocean = "ocean.wav">>\u000a<<set $cicadas = "cicadas.wav">>\u000a<<endsilently>>\u000a\u000a<<loopsound $ocean>>
+p360
+sg23
+VDay1
+p361
+sg25
+g26
+((I2015
+I4
+I29
+I19
+I58
+I1
+I2
+I119
+I0
+tp362
+(dp363
+tp364
+Rp365
+sg31
+(lp366
+Vbeach
+p367
+asg34
+g26
+((I2015
+I4
+I29
+I19
+I57
+I45
+I2
+I119
+I0
+tp368
+(dp369
+tp370
+Rp371
 sbsasS'scale'
-p356
+p372
 I1
 sS'snapping'
-p357
+p373
 I00
 ss.
